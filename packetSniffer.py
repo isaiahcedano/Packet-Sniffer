@@ -23,6 +23,7 @@ def processNetPacketData(packet):
         if login_INFO: #If statement is to make sure that the login_INFO only gets executed if its true on the getLoginInfo function
             print("[+] Potential Login Account --->>> " + login_INFO)
 
+            
 def sniff_NetPacketData(interface):
     print("[+] Sniffing... \n")
     scapy.sniff(iface=interface, store=False, prn=processNetPacketData)
